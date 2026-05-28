@@ -21,6 +21,9 @@ export default function Hero() {
             <p className="mt-6 max-w-2xl text-base text-muted md:text-lg">
               {profile.tagline}
             </p>
+            <p className="mt-3 max-w-2xl text-sm font-medium text-accent2 md:text-base">
+              {profile.availability}
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="#projects" className="btn-primary">

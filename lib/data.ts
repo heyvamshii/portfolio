@@ -9,6 +9,8 @@ export const profile = {
   title: "Python & AI Developer",
   tagline:
     "An enthusiast exploring Python, AI, and agentic tools. Learning by building.",
+  availability:
+    "Open to internships and full-time roles, starting June 2026.",
   location: "Hyderabad, India",
   email: "vamshikris25@gmail.com",
   phone: "+91 8688086325",
