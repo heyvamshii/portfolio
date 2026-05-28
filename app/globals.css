@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text antialiased;
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(124, 92, 255, 0.12), transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(34, 211, 238, 0.10), transparent 45%);
+    background-attachment: fixed;
+  }
+
+  *::selection {
+    @apply bg-accent/40 text-white;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-5xl px-6;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold tracking-tight mb-4;
+  }
+
+  .section-subheading {
+    @apply text-muted text-base md:text-lg mb-12 max-w-2xl;
+  }
+
+  .card {
+    @apply rounded-2xl border border-border bg-surface/60 backdrop-blur-sm
+           transition duration-300 hover:border-accent/40 hover:bg-surface;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full border border-border
+           bg-surface/80 px-3 py-1 text-xs font-medium text-muted;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5
+           text-sm font-semibold text-white shadow-lg shadow-accent/20
+           transition hover:bg-accent/90 hover:shadow-accent/30;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-full border border-border
+           bg-transparent px-5 py-2.5 text-sm font-semibold text-text
+           transition hover:border-accent/60 hover:bg-surface;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-muted transition hover:text-text;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(120deg, #a78bfa, #22d3ee, #a78bfa);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease-in-out infinite;
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
