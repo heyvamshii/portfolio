@@ -63,6 +63,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Food on Fire - Full-Stack Django Platform",
+    description:
+      "Built end-to-end: customer ordering, a restaurant dashboard, delivery agent tracking, and an admin panel, all in one codebase. Integrated Razorpay for payments, the Google Firebase API for OTP-only auth, and live GPS order tracking on a map via the Google Maps API.",
+    bullets: [
+      {
+        label: "Key debug",
+        text: "Razorpay webhook verification failed in production due to a signature mismatch. I traced it and fixed it using raw error resolution handling.",
+      },
+    ],
+    tags: ["Django", "PostgreSQL", "REST APIs", "JavaScript"],
+    github: "https://github.com/heyvamshii/Food-On-Fire",
+  },
+  {
     title: "Jerry - Voice AI Assistant",
     description:
       "Always-on Windows voice agent with \"Hey Jerry\" wake-word detection, Whisper speech-to-text, and a Claude-powered tool-use loop that can drive the browser and take actions on command and perform any task on my laptop.",
