@@ -28,8 +28,8 @@ export const profile = {
 export const about = {
   heading: "About Me",
   paragraphs: [
-    "I'm a final-year B.Tech student in Computer Science & Engineering (AI/ML) at CMRCET. My focus is on applying software development and programming fundamentals to design scalable applications and produce more output using AI Agents.",
-    "I'm drawn to problems at the intersection of AI and real-world utility. Whether that's a deep-learning model for medical imaging, an always-on voice assistant, or an AI-powered lead-generation tool, I enjoy learning by building. Outside of coursework I lead and support entrepreneurship initiatives on and off campus.",
+    "I am a recent B.Tech graduate in Computer Science & Engineering (AI/ML) at CMRIT. My focus is on applying software development and programming fundamentals to design scalable applications and produce more output using AI Agents.",
+    "I'm drawn to problems at the intersection of AI and real-world utility. Whether that's a deep-learning model for medical imaging, an always-on voice assistant, a full-stack Django website for a restaurant, or an AI-powered lead-generation tool, I enjoy learning by building. Outside of coursework I led and supported entrepreneurship initiatives on and off campus.",
   ],
 };
 
@@ -41,7 +41,7 @@ export type SkillGroup = {
 export const skills: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["C", "Python", "SQL", "HTML", "CSS"],
+    items: ["C", "Python", "SQL", "HTML", "CSS", "Django"],
   },
   {
     category: "AI / ML",
@@ -49,7 +49,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "Replit"],
+    items: ["Git", "GitHub", "Replit", "Google Firebase API", "Google Maps API"],
   },
 ];
 
@@ -72,7 +72,7 @@ export const projects: Project[] = [
         text: "Razorpay webhook verification failed in production due to a signature mismatch. I traced it and fixed it using raw error resolution handling.",
       },
     ],
-    tags: ["Django", "PostgreSQL", "REST APIs", "JavaScript"],
+    tags: ["HTML", "CSS", "JavaScript", "PostgreSQL", "Django", "Google Firebase API", "Google Maps API", "Razorpay"],
     github: "https://github.com/heyvamshii/Food-On-Fire",
   },
   {
