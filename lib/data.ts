@@ -14,7 +14,7 @@ export const profile = {
   location: "Hyderabad, India",
   email: "vamshikris25@gmail.com",
   phone: "+91 8688086325",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/VamshiKrishna-resume.pdf",
   avatarInitials: "VK",
   avatarImage: "/avatar.jpg",
   social: {

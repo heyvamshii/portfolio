@@ -25,7 +25,7 @@ Edit it to fill in:
 - `education`: schools and degrees
 - `achievements`: leadership and extracurricular highlights
 
-To swap the resume PDF, replace `public/resume.pdf` with your own file.
+To swap the resume PDF, replace `public/VamshiKrishna-resume.pdf` (and update `resumeUrl` in `lib/data.ts` if the filename changes).
 
 ## Sections
 
