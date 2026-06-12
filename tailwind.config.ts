@@ -12,14 +12,15 @@ const config: Config = {
         bg: "#0a0a0f",
         surface: "#11111a",
         border: "#1f1f2e",
-        muted: "#8a8aa3",
+        muted: "#d9d0bb",
         text: "#e6e6f0",
         accent: "#7c5cff",
         accent2: "#22d3ee",
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "monospace"],
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-space-grotesk)", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["var(--font-jetbrains-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out forwards",

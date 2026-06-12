@@ -7,6 +7,12 @@
     scroll-behavior: smooth;
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
   body {
     @apply bg-bg text-text antialiased;
     background-image:
