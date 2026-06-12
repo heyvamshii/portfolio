@@ -21,8 +21,9 @@ Edit it to fill in:
 - `profile`: name, title, tagline, email, social links, resume URL
 - `about`: bio paragraphs
 - `skills`: categorized skill groups
-- `projects`: project entries with GitHub links
+- `projects`: project entries with GitHub and/or live-site links
 - `education`: schools and degrees
+- `achievements`: leadership and extracurricular highlights
 
 To swap the resume PDF, replace `public/resume.pdf` with your own file.
 
@@ -31,9 +32,10 @@ To swap the resume PDF, replace `public/resume.pdf` with your own file.
 1. **Hero**: name, headline, CTA buttons, social icons
 2. **About**: bio paragraphs
 3. **Skills**: grouped skill pills
-4. **Projects**: horizontal cards with GitHub links
+4. **Projects**: horizontal cards with GitHub / live-site links
 5. **Education**: academic background
-6. **Contact**: LinkedIn CTA
+6. **Achievements**: leadership and extracurricular highlights
+7. **Contact**: LinkedIn card
 
 ## Production build
 

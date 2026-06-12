@@ -10,7 +10,7 @@ export const profile = {
   tagline:
     "An enthusiast exploring Python, AI, and agentic tools. Learning by building.",
   availability:
-    "Open to internships and full-time roles, starting June 2026.",
+    "Open to internships and full-time roles — available immediately.",
   location: "Hyderabad, India",
   email: "vamshikris25@gmail.com",
   phone: "+91 8688086325",
@@ -28,7 +28,7 @@ export const profile = {
 export const about = {
   heading: "About Me",
   paragraphs: [
-    "I am a recent B.Tech graduate in Computer Science & Engineering (AI/ML) at CMRCET. My focus is on applying software development and programming fundamentals to design scalable applications and produce more output using AI Agents.",
+    "I am a recent B.Tech graduate (2026) in Computer Science & Engineering (AI/ML) from CMRCET. My focus is on applying software development and programming fundamentals to design scalable applications and produce more output using AI Agents.",
     "I'm drawn to problems at the intersection of AI and real-world utility. Whether that's a deep-learning model for medical imaging, an always-on voice assistant, a full-stack Django website for a restaurant, or an AI-powered lead-generation tool, I enjoy learning by building. Outside of coursework I led and supported entrepreneurship initiatives on and off campus.",
   ],
 };
@@ -59,6 +59,7 @@ export type Project = {
   bullets?: { label: string; text: string }[];
   tags: string[];
   github?: string;
+  live?: string;
 };
 
 export const projects: Project[] = [
@@ -73,7 +74,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ["HTML", "CSS", "JavaScript", "PostgreSQL", "Django", "Google Firebase API", "Google Maps API", "Razorpay"],
-    github: "https://github.com/heyvamshii/Food-On-Fire",
+    live: "https://www.foodonfire.in/",
   },
   {
     title: "Jerry - Voice AI Assistant",
@@ -112,6 +113,12 @@ export const projects: Project[] = [
   },
 ];
 
+export const achievements: string[] = [
+  "Led the organizing committee of “Nexus” E-Summit, a flagship entrepreneurship event featuring top startup founders and industry speakers, with 700+ participants and competitions with a ₹25,000 prize pool.",
+  "Represented E-Cell IIT Bombay at CMRCET, promoting entrepreneurship and innovation through workshops, coding events, and startup-focused initiatives.",
+  "Supported coding events, technical sessions, and student-led tech projects as part of the Innovation and Entrepreneurship Board.",
+];
+
 export type EducationItem = {
   school: string;
   degree: string;
@@ -124,7 +131,7 @@ export const education: EducationItem[] = [
   {
     school: "CMR College of Engineering & Technology",
     degree: "B.Tech, Computer Science & Engineering (AI/ML)",
-    period: "Graduating June 2026",
+    period: "Recent graduate, 2026",
     details: "CGPA: 7.01",
     skills: ["Python", "SQL", "AI Tools", "Agentic AI"],
   },

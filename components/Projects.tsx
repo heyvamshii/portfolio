@@ -1,4 +1,4 @@
-import { projects } from "@/lib/data";
+import { projects, type Project } from "@/lib/data";
 
 export default function Projects() {
   return (
@@ -22,14 +22,7 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({
-  project,
-}: {
-  project: (typeof import("@/lib/data").projects)[number];
-}) {
-  const href = project.github && project.github.length > 0 ? project.github : "#";
-  const hasLink = href !== "#";
-
+function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="card p-6 md:p-8 relative">
       <h3 className="text-xl font-bold pr-28">{project.title}</h3>
@@ -62,20 +55,53 @@ function ProjectCard({
         ))}
       </ul>
 
-      <div className="mt-6 flex justify-end">
-        <a
-          href={href}
-          target={hasLink ? "_blank" : undefined}
-          rel={hasLink ? "noopener noreferrer" : undefined}
-          aria-label={`${project.title} GitHub repository`}
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-2 text-sm font-semibold text-text transition hover:border-accent/60 hover:bg-surface hover:text-accent2"
-        >
-          <GithubIcon />
-          GitHub
-          <ArrowIcon />
-        </a>
-      </div>
+      {(project.live || project.github) && (
+        <div className="mt-6 flex justify-end gap-3">
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${project.title} live site`}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-2 text-sm font-semibold text-text transition hover:border-accent/60 hover:bg-surface hover:text-accent2"
+            >
+              <GlobeIcon />
+              Live Site
+              <ArrowIcon />
+            </a>
+          )}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${project.title} GitHub repository`}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-2 text-sm font-semibold text-text transition hover:border-accent/60 hover:bg-surface hover:text-accent2"
+            >
+              <GithubIcon />
+              GitHub
+              <ArrowIcon />
+            </a>
+          )}
+        </div>
+      )}
     </article>
+  );
+}
+
+function GlobeIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" strokeLinecap="round" />
+    </svg>
   );
 }
 

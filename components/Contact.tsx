@@ -5,38 +5,27 @@ export default function Contact() {
 
   return (
     <section id="contact" className="section">
-      <div className="container-narrow text-center">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-          <span className="font-mono text-accent2 text-base mr-2">05.</span>
+      <div className="container-narrow">
+        <h2 className="section-heading">
+          <span className="font-mono text-accent2 text-base mr-2">06.</span>
           Let&apos;s build something together
         </h2>
 
-        <p className="mx-auto mt-2 max-w-xl text-muted leading-relaxed">
+        <p className="max-w-xl text-muted leading-relaxed">
           I&apos;m open to internships and full-time roles on Python and AI
           toolkit-related projects. If you have an idea or just want to say hi,
           my inbox is always open.
         </p>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-6">
           <a
             href={linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            Say hello
-          </a>
-        </div>
-
-        <div className="mt-10 flex justify-center">
-          <a
-            href={linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group card flex items-center gap-4 px-6 py-4 w-full max-w-md text-left transition hover:border-accent/60"
+            className="group card inline-flex items-center gap-3 px-5 py-3 text-left transition hover:border-accent/60"
             aria-label="Connect on LinkedIn"
           >
-            <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-[#0a66c2] text-white">
+            <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#0a66c2] text-white">
               <LinkedinIcon />
             </span>
             <span className="flex flex-col">
@@ -45,7 +34,7 @@ export default function Contact() {
               </span>
               <span className="font-semibold">{profile.name}</span>
             </span>
-            <span className="ml-auto text-muted transition group-hover:text-text">
+            <span className="ml-2 text-muted transition group-hover:text-text">
               <ArrowIcon />
             </span>
           </a>
