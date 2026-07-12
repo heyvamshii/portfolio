@@ -5,7 +5,7 @@ export default function Achievements() {
     <section id="achievements" className="section">
       <div className="container-narrow">
         <h2 className="section-heading">
-          <span className="font-mono text-accent2 text-base mr-2">05.</span>
+          <span className="font-mono text-accent2 text-base mr-2">06.</span>
           Achievements
         </h2>
         <p className="section-subheading">

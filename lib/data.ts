@@ -79,8 +79,8 @@ export const projects: Project[] = [
   {
     title: "Jerry - Voice AI Assistant",
     description:
-      "Always-on Windows voice agent with \"Hey Jerry\" wake-word detection, Whisper speech-to-text, and a Claude-powered tool-use loop that can drive the browser and take actions on command and perform any task on my laptop.",
-    tags: ["Python", "Claude Agent SDK", "Whisper"],
+      "Always-on Windows voice agent with \"Hey Jerry\" wake-word detection, Whisper speech-to-text, and a Gemini-powered tool-use loop that can drive the browser and take actions on command and perform any task on my laptop.",
+    tags: ["Python", "Gemini 2.5 Flash", "Whisper"],
     github: "https://github.com/heyvamshii/hey-jerry",
   },
   {
@@ -117,6 +117,27 @@ export const achievements: string[] = [
   "Led the organizing committee of “Nexus” E-Summit, a flagship entrepreneurship event featuring top startup founders and industry speakers, with 700+ participants and competitions with a ₹25,000 prize pool.",
   "Represented E-Cell IIT Bombay at CMRCET, promoting entrepreneurship and innovation through workshops, coding events, and startup-focused initiatives.",
   "Supported coding events, technical sessions, and student-led tech projects as part of the Innovation and Entrepreneurship Board.",
+];
+
+export type Certification = {
+  title: string;
+  issuer: string;
+  date: string;
+  description: string;
+  skills: string[];
+  url?: string;
+};
+
+export const certifications: Certification[] = [
+  {
+    title: "AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents",
+    issuer: "Udemy · Instructors: Ed Donner, Ligency",
+    date: "July 2026",
+    description:
+      "A 33.5-hour hands-on program covering the end-to-end LLM engineering workflow: building LLM-powered applications, Retrieval-Augmented Generation (RAG) pipelines, parameter-efficient fine-tuning with QLoRA, and designing autonomous AI agents.",
+    skills: ["LLM Engineering", "RAG", "QLoRA Fine-Tuning", "AI Agents"],
+    url: "https://ude.my/UC-11f684db-ee5e-41a1-b045-2a3abd73abf0",
+  },
 ];
 
 export type EducationItem = {
