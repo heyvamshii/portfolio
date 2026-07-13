@@ -77,11 +77,54 @@ export const projects: Project[] = [
     live: "https://www.foodonfire.in/",
   },
   {
+    title: "Restaurant Reservation System (Savoria)",
+    description:
+      "A full-stack MERN reservation platform, deployed live, that guarantees conflict-free bookings through a custom availability engine and gives admins full control over tables, slots, and reservations.",
+    bullets: [
+      {
+        label: "Full-Stack MERN",
+        text: "Built and deployed a full-stack MERN reservation platform with JWT authentication and role-based access for customer and admin users, running live across Vercel, Render, and MongoDB Atlas.",
+      },
+      {
+        label: "Availability Engine",
+        text: "Engineered the core availability engine that prevents double-bookings and capacity conflicts using time-interval overlap checks and atomic MongoDB transactions, with automatic capacity-aware table assignment.",
+      },
+      {
+        label: "Secure API",
+        text: "Designed a secure REST API with role-based authorization, correct HTTP status codes, centralized error handling, and input sanitization against NoSQL injection, plus rate limiting and Helmet hardening.",
+      },
+    ],
+    tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "JWT"],
+    github: "https://github.com/heyvamshii/Restaurant-Reservation-System",
+    live: "https://restaurant-reservation-system-jet.vercel.app/",
+  },
+  {
     title: "Jerry - Voice AI Assistant",
     description:
       "Always-on Windows voice agent with \"Hey Jerry\" wake-word detection, Whisper speech-to-text, and a Gemini-powered tool-use loop that can drive the browser and take actions on command and perform any task on my laptop.",
     tags: ["Python", "Gemini 2.5 Flash", "Whisper"],
     github: "https://github.com/heyvamshii/hey-jerry",
+  },
+  {
+    title: "Smart Trip Planner Agent - Agentic AI Travel Planner",
+    description:
+      "An autonomous AI travel agent that turns a plain-English trip request into a complete, budget-verified itinerary by dynamically choosing which tools to call via LLM function-calling.",
+    bullets: [
+      {
+        label: "Agentic Core",
+        text: "Built an autonomous AI agent that turns a plain-English trip request into a complete, budget-verified itinerary in ~8-10s by dynamically deciding which of 5 tools to call (flights, hotels, weather, local costs, budget check) via LLM function-calling.",
+      },
+      {
+        label: "Anti-Hallucination",
+        text: "Eliminated LLM numeric hallucination by making tools deterministic and the single source of truth: the system computes all costs, producing reproducible, always-consistent budgets instead of model-guessed figures.",
+      },
+      {
+        label: "Transparent UI",
+        text: "Designed a two-panel Streamlit UI with a live agent-activity trace and progress states, exposing every tool call and decision for full transparency and auditability.",
+      },
+    ],
+    tags: ["Python", "Groq (Llama 3.3)", "Streamlit", "Agentic AI", "Function-Calling"],
+    github: "https://github.com/heyvamshii/Smart-Trip-Planner-Agent",
   },
   {
     title: "LeadGen AI",
