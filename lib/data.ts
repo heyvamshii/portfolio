@@ -64,13 +64,21 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Food on Fire - Full-Stack Django Platform",
+    title: "Food On Fire Restaurant — Full-Stack Django Platform",
     description:
       "Built end-to-end: customer ordering, a restaurant dashboard, delivery agent tracking, and an admin panel, all in one codebase. Integrated Razorpay for payments, the Google Firebase API for OTP-only auth, and live GPS order tracking on a map via the Google Maps API.",
     bullets: [
       {
-        label: "Key debug",
-        text: "Razorpay webhook verification failed in production due to a signature mismatch. I traced it and fixed it using raw error resolution handling.",
+        label: "Unified Multi-Role Architecture",
+        text: "One Django + PostgreSQL backend as a single source of truth behind four role-gated dashboards — customer, admin, delivery & restaurant.",
+      },
+      {
+        label: "Concurrency-Safe Delivery Engine",
+        text: "Race-proof rider claims via a single atomic update (no double-assignment), with Haversine distance-based delivery fee and live GPS tracking on Google Maps.",
+      },
+      {
+        label: "Secure Payments",
+        text: "Razorpay with server-side signature verification so orders reach the kitchen only after payment is proven genuine — plus auto-refunds, and zero deploy-check warnings.",
       },
     ],
     tags: ["HTML", "CSS", "JavaScript", "PostgreSQL", "Django", "Google Firebase API", "Google Maps API", "Razorpay"],
